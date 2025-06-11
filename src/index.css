@@ -4,89 +4,87 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 98%; /* Off-white */
+    --foreground: 240 10% 3.9%; /* Very Dark Blue/Almost Black */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 240 10% 3.9%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 240 10% 3.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 90 65% 50%; /* Fresh Green */
+    --primary-foreground: 90 20% 15%; /* Dark Green */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 240 4.8% 95.9%; /* Very Light Gray */
+    --secondary-foreground: 240 5.9% 10%; /* Dark Blue/Black */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 4.8% 95.9%; /* Very Light Gray */
+    --muted-foreground: 240 3.8% 46.1%; /* Medium Gray */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 175 70% 40%; /* Energetic Teal */
+    --accent-foreground: 0 0% 100%; /* White */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%; /* Red */
+    --destructive-foreground: 0 0% 98%; /* Light Gray */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 5.9% 90%; /* Light Gray */
+    --input: 240 5.9% 90%; /* Light Gray */
+    --ring: 175 75% 45%; /* Accent Teal (brighter for ring) */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* 12px */
 
-    --sidebar-background: 0 0% 98%;
+    --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar variables - Light Mode */
+    --sidebar-background: 0 0% 97%; /* Slightly off-white, distinct */
+    --sidebar-foreground: 240 10% 3.9%; /* Main foreground */
+    --sidebar-primary: 90 65% 50%; /* Main primary green */
+    --sidebar-primary-foreground: 90 20% 15%; /* Main primary-foreground dark green */
+    --sidebar-accent: 175 70% 40%; /* Main accent teal */
+    --sidebar-accent-foreground: 0 0% 100%; /* Main accent-foreground white */
+    --sidebar-border: 240 5.9% 90%; /* Main border */
+    --sidebar-ring: 175 75% 45%; /* Main ring teal */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 240 10% 3.9%; /* Very Dark Blue/Almost Black */
+    --foreground: 0 0% 98%; /* Off-white */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 240 6% 10%; /* Slightly off-black */
+    --card-foreground: 0 0% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 240 6% 10%; /* Slightly off-black */
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 90 60% 70%; /* Lighter, vibrant Green */
+    --primary-foreground: 90 20% 15%; /* Dark Green */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 240 3.7% 15.9%; /* Dark Gray */
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 240 3.7% 15.9%; /* Dark Gray */
+    --muted-foreground: 240 5% 64.9%; /* Lighter Gray */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 175 65% 65%; /* Lighter Teal */
+    --accent-foreground: 175 20% 15%; /* Dark Teal */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72.2% 50.6%; /* Vibrant Red */
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 240 3.7% 15.9%; /* Dark Gray */
+    --input: 240 3.7% 15.9%; /* Dark Gray */
+    --ring: 175 70% 70%; /* Accent Teal (lighter for dark mode ring) */
+
+    /* Sidebar variables - Dark Mode */
+    --sidebar-background: 240 6% 8%; /* Distinct very dark desaturated blue */
+    --sidebar-foreground: 0 0% 98%; /* Main foreground */
+    --sidebar-primary: 90 60% 70%; /* Main primary light green */
+    --sidebar-primary-foreground: 90 20% 15%; /* Main primary-foreground dark green */
+    --sidebar-accent: 175 65% 65%; /* Main accent light teal */
+    --sidebar-accent-foreground: 175 20% 15%; /* Main accent-foreground dark teal */
+    --sidebar-border: 240 3.7% 15.9%; /* Main border */
+    --sidebar-ring: 175 70% 70%; /* Main ring light teal */
   }
 }
 
@@ -97,5 +95,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
   }
 }
